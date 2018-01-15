@@ -3,6 +3,7 @@ Given("the following products exist within a specific restaurant") do |table|
     held_by_restaurant = Restaurant.find_by(name: product[:restaurant])
     FactoryBot.create(:product,
     name: product[:name],
+    description: product[:description],
     restaurant: held_by_restaurant)
   end
 end

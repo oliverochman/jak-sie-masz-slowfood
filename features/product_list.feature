@@ -11,10 +11,10 @@ Feature: User can see product list on the restaurant show page
       | Borat's Palace    |
 
     Given the following products exist within a specific restaurant
-      | name              | restaurant      |
-      | Chicken wings     | Oliver's Burger |
-      | Double Burger     | Oliver's Burger |
-      | Apple pie         | Oliver's Burger |
+    | name              | restaurant      | description      |
+    | Chicken wings     | Oliver's Burger | Nice wings       |
+    | Double Burger     | Oliver's Burger | Tasty fat burger |
+    | Apple pie         | Oliver's Burger | Sweet pie        | 
 
   Scenario:
     When I visit the "Oliver's Burger" show page

@@ -2,5 +2,9 @@
 <p><%= @restaurant.description %></p>
 
 <% @restaurant.products.each do |product| %>
- <li><%= product.name %></li>
+  <div id="product-<%= product.id %>">
+     <h4><%= product.name %></h4>
+     <p><%= product.description %></p>
+     <p><%= product.price %></p>
+  </div>
 <% end %>
