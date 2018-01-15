@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(version: 20180114201422) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "description"
     t.float "latitude"
     t.float "longitude"
     t.string "city"
     t.string "street_address"
     t.string "post_code"
+    t.string "description"
     t.bigint "restaurant_category_id"
     t.index ["restaurant_category_id"], name: "index_restaurants_on_restaurant_category_id"
   end
