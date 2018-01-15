@@ -4,7 +4,6 @@ function initiateMap() {
     coords = JSON.parse(document.getElementById('fake_position').content);
   } else {
     navigator.geolocation.getCurrentPosition(function(resp){
-      //console.log(resp);
       coords = resp.coords;
     })
   }
