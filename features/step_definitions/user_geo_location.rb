@@ -1,5 +1,5 @@
 Given("I am at latitude: {string}, longitude: {string}") do |lat, lng|
-  Rails.application.config.fake_location = {lat: lat, lng: lng}
+  Rails.application.config.fake_location = {latitude: lat, longitude: lng}
 end
 
 Given("the map has been loaded") do
