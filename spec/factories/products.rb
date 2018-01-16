@@ -1,8 +1,9 @@
 FactoryBot.define do
   factory :product do
     restaurant
+    product_category
     name "MyString"
-    description "MyString"
-    price "MyString"
+    description "Product description"
+    price "80 kr"
   end
 end
