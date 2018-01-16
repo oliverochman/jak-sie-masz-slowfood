@@ -13,4 +13,16 @@ function initiateMap() {
         lat: coords.latitude,
         lng: coords.longitude
     });
+    addMarkers()
 }
+
+function addMarkers() {
+    restaurants.forEach(function (item) {
+        map.addMarker({
+            lat: item.latitude,
+            lng: item.longitude,
+            title: item.name,
+            infoWindow: {
+                content: '<h4>' + item.name + '</h4><p>' + item.city +'</p>'
+            }
+        });

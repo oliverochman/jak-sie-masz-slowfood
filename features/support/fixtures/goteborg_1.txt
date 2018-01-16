@@ -1,0 +1,185 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1",
+               "short_name" : "1",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Kungsgatan",
+               "short_name" : "Kungsgatan",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Inom Vallgraven",
+               "short_name" : "Inom Vallgraven",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Göteborg",
+               "short_name" : "Göteborg",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Västra Götalands län",
+               "short_name" : "Västra Götalands län",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Sweden",
+               "short_name" : "SE",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "411 19",
+               "short_name" : "411 19",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Kungsgatan 1, 411 19 Göteborg, Sweden",
+         "geometry" : {
+            "location" : {
+               "lat" : 57.7027397,
+               "lng" : 11.9565337
+            },
+            "location_type" : "RANGE_INTERPOLATED",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 57.70408868029151,
+                  "lng" : 11.9578826802915
+               },
+               "southwest" : {
+                  "lat" : 57.70139071970849,
+                  "lng" : 11.9551847197085
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "EidLdW5nc2dhdGFuIDEsIDQxMSAxOSBHw7Z0ZWJvcmcsIFN2ZXJpZ2U",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "1",
+               "short_name" : "1",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Kungstorget",
+               "short_name" : "Kungstorget",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Inom Vallgraven",
+               "short_name" : "Inom Vallgraven",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Göteborg",
+               "short_name" : "Göteborg",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Västra Götalands län",
+               "short_name" : "Västra Götalands län",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Sweden",
+               "short_name" : "SE",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "411 17",
+               "short_name" : "411 17",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Kungstorget 1, 411 17 Göteborg, Sweden",
+         "geometry" : {
+            "location" : {
+               "lat" : 57.7028824,
+               "lng" : 11.9671999
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 57.7042313802915,
+                  "lng" : 11.9685488802915
+               },
+               "southwest" : {
+                  "lat" : 57.7015334197085,
+                  "lng" : 11.9658509197085
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJvaN0Y2_zT0YRxdVFgZw-Q5w",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "1",
+               "short_name" : "1",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Lilla Kungsgatan",
+               "short_name" : "Lilla Kungsgatan",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Inom Vallgraven",
+               "short_name" : "Inom Vallgraven",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Göteborg",
+               "short_name" : "Göteborg",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Västra Götalands län",
+               "short_name" : "Västra Götalands län",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Sweden",
+               "short_name" : "SE",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "411 08",
+               "short_name" : "411 08",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Lilla Kungsgatan 1, 411 08 Göteborg, Sweden",
+         "geometry" : {
+            "location" : {
+               "lat" : 57.7052955,
+               "lng" : 11.9716614
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 57.7066444802915,
+                  "lng" : 11.9730103802915
+               },
+               "southwest" : {
+                  "lat" : 57.70394651970849,
+                  "lng" : 11.9703124197085
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJ4zomH2XzT0YRmqnQ_NIVqxA",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

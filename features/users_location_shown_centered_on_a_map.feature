@@ -6,12 +6,13 @@ Feature: User geo location
 
   Background:
     Given the following restaurants exist
-      | name                | city      |
-      | Scott's Pizza Place | Stockholm |
-      | Oliver's Burgers    | Göteborg  |
+      | name              | street_address    | city     |
+      | Thomas Kebabrulle | Drottninggatan 1  | Göteborg |
+      | Oliver's Burger   | Kungsgatan 1      | Göteborg |
 
   And I am at latitude: "59.33", longitude: "18.05"
 
+  @googlemap
   Scenario: Users location is at the center of the map
     Given I visit the landing page
     And the map has been loaded

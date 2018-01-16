@@ -9,7 +9,9 @@ Given("the following restaurants within categories exist") do |table|
    category = RestaurantCategory.find_by(name: restaurant[:category])
    FactoryBot.create(:restaurant,
     name: restaurant[:name],
-    restaurant_category: category)
+    restaurant_category: category,
+    street_address: restaurant[:street_address],
+    city: restaurant[:city])
   end
 end
 

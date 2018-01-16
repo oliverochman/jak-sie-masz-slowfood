@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'geocoder'
 gem 'dotenv-rails'
+gem 'rails-assets-gmaps', source: 'https://rails-assets.org'
 
 group :development, :test do
   gem 'pry-byebug'
@@ -26,8 +27,9 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'coveralls', require: false
-  gem 'selenium-webdriver', '~> 2.48.1'
+  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'webmock'
 end
 
 group :development do
