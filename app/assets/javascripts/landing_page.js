@@ -26,3 +26,5 @@ function addMarkers() {
                 content: '<h4>' + item.name + '</h4><p>' + item.city +'</p>'
             }
         });
+      });
+    }
