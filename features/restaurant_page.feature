@@ -5,11 +5,12 @@ Feature: User can see restaurant's details on the restaurant show page
 
   Background:
     Given the following restaurants exist
-      | name              | description                     |
-      | Thomas Kebabrulle | The best kebabrulle you can get |
-      | Oliver's Burger   | The best burger at Chalmers     |
-      | Borat's Palace    | Jak sie masz?                   |
+    | name              | street_address    | city     | description                     |
+    | Thomas Kebabrulle | Drottninggatan 1  | Göteborg | The best kebabrulle you can get |
+    | Oliver's Burger   | Kungsgatan 1      | Göteborg | The best hamburger you can get  |
+    | Borat's Palace    | Östra Hmangatan 1 | Göteborg | The best borat you can get      |
 
+  @googlemap
   Scenario:
     When I visit the landing page
     And I click on "Visit" by "Thomas Kebabrulle"

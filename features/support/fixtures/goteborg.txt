@@ -1,0 +1,64 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1",
+               "short_name" : "1",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Drottninggatan",
+               "short_name" : "Drottninggatan",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Inom Vallgraven",
+               "short_name" : "Inom Vallgraven",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Göteborg",
+               "short_name" : "Göteborg",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Västra Götalands län",
+               "short_name" : "Västra Götalands län",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Sweden",
+               "short_name" : "SE",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "411 14",
+               "short_name" : "411 14",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Drottninggatan 1, 411 14 Göteborg, Sweden",
+         "geometry" : {
+            "location" : {
+               "lat" : 57.70472909999999,
+               "lng" : 11.9614696
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 57.7060780802915,
+                  "lng" : 11.9628185802915
+               },
+               "southwest" : {
+                  "lat" : 57.70338011970849,
+                  "lng" : 11.9601206197085
+               }
+            }
+         },
+         "place_id" : "ChIJlWPGMGbzT0YRrKxVBN4nzCg",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

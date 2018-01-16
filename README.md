@@ -1,5 +1,7 @@
 # Slowfood application and Acceptance-Unit Test Cycle with Ruby on Rails
 
+[![Build Status](https://semaphoreci.com/api/v1/craftacademy/jak-sie-masz-slowfood/branches/development/badge.svg)](https://semaphoreci.com/craftacademy/jak-sie-masz-slowfood)
+
 ## at CraftAcademy bootcamp week 8 & 9
 
 **Assignment**

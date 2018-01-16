@@ -1,0 +1,65 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1",
+               "short_name" : "1",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Östra Hamngatan",
+               "short_name" : "Östra Hamngatan",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Nordstaden",
+               "short_name" : "Nordstaden",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Göteborg",
+               "short_name" : "Göteborg",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Västra Götalands län",
+               "short_name" : "Västra Götalands län",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Sweden",
+               "short_name" : "SE",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "411 10",
+               "short_name" : "411 10",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Östra Hamngatan 1, 411 10 Göteborg, Sweden",
+         "geometry" : {
+            "location" : {
+               "lat" : 57.7096369,
+               "lng" : 11.9661792
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 57.71098588029151,
+                  "lng" : 11.9675281802915
+               },
+               "southwest" : {
+                  "lat" : 57.7082879197085,
+                  "lng" : 11.9648302197085
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJkwb3T2HzT0YR97JXmVS2sDM",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

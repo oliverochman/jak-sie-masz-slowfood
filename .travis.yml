@@ -4,6 +4,10 @@ rvm:
 - 2.4.1
 services:
 - postgresql
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
 before_script:
 - bundle exec rails db:create db:migrate RAILS_ENV=test
 script:

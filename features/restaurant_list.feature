@@ -5,11 +5,12 @@ Feature: User can see a list of restaurants on the landing page
 
   Background:
     Given the following restaurants exist
-      | name              |
-      | Thomas Kebabrulle |
-      | Oliver's Burger   |
-      | Borat's Palace    |
+    | name              | street_address    | city     |
+    | Thomas Kebabrulle | Drottninggatan 1  | Göteborg |
+    | Oliver's Burger   | Kungsgatan 1      | Göteborg |
+    | Borat's Palace    | Östra Hmangatan 1 | Göteborg |
 
+  @googlemap
   Scenario:
     When I visit the landing page
     Then I would like to see "Thomas Kebabrulle"
