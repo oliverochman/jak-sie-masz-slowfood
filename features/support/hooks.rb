@@ -1,3 +1,3 @@
 Before do |scenario|
-  Rails.application.config.fake_location = {latitude: 59.33, longitude: 18.05}
+  Rails.application.config.fake_location = {latitude: 58.00, longitude: 13.06}
 end
