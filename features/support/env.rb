@@ -5,17 +5,19 @@ require 'cucumber/rails'
 
 Chromedriver.set_version '2.33'
 
-Capybara.register_driver :chrome do |app|
-  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
-      chromeOptions: {
-          args: %w[ no-sandbox disable-popup-blocking window-size=1280,980]
-      }
+Capybara.register_driver :selenium do |app|
+  options = Selenium::WebDriver::Chrome::Options.new(
+    args: %w[headless disable-popup-blocking]
   )
 
-  Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: capabilities)
+  Capybara::Selenium::Driver.new(
+    app,
+    browser: :chrome,
+    options: options
+  )
 end
 
-Capybara.javascript_driver = :chrome
+Capybara.javascript_driver = :selenium
 
 ActionController::Base.allow_rescue = false
 
