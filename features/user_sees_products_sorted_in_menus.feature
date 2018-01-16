@@ -15,6 +15,7 @@ Feature: Restaurant multiple menus
       | Chicken wings     | Oliver's Burger | Starter     | Lunch      |
       | Double Burger     | Oliver's Burger | Main Course | À la carte |
 
+      @googlemap
       Scenario:
         When I visit the "Oliver's Burger" show page
         Then I would like to see "Chicken wings" under the "Lunch" menu
