@@ -1,8 +1,10 @@
 Given("the following products exist within a specific restaurant and category") do |table|
   table.hashes.each do |product|
     restaurant = Restaurant.find_by(name: product[:restaurant])
+    menu = FactoryBot.create(:menu, name: product[:menu], restaurant: restaurant)
     category = FactoryBot.create(:product_category, name: product[:category],
-                                                    restaurant: restaurant)
+                                                    restaurant: restaurant,
+                                                    menu: menu)
     FactoryBot.create(:product, name: product[:name],
                                           product_category: category,
                                           restaurant: restaurant)

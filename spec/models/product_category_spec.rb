@@ -5,6 +5,7 @@ RSpec.describe ProductCategory, type: :model do
     it { is_expected.to have_db_column :name}
     it { is_expected.to have_many :products}
     it { is_expected.to belong_to :restaurant}
+    it { is_expected.to belong_to :menu}
   end
 
   describe 'Validations' do
