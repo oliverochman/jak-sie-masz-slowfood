@@ -11,11 +11,11 @@ Feature: User can see products sorted by categories
       | Borat's Palace    | Östra Hmangatan 1 | Göteborg |
 
     Given the following products exist within a specific restaurant and category
-      | name              | restaurant      | category    |
-      | Chicken wings     | Oliver's Burger | Starter     |
-      | Double Burger     | Oliver's Burger | Main Course |
-      | Apple pie         | Oliver's Burger | Dessert     |
-      | Apple pie         | Borat's Palace  | Starter     |
+      | name              | restaurant      | category    | menu  |
+      | Chicken wings     | Oliver's Burger | Starter     | Lunch |
+      | Double Burger     | Oliver's Burger | Main Course | Lunch |
+      | Apple pie         | Oliver's Burger | Dessert     | Lunch |
+      | Apple pie         | Borat's Palace  | Starter     | Lunch |
       
     @googlemap
     Scenario:
