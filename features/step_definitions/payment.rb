@@ -1,5 +1,5 @@
 Given("I visit orders page") do
-  visit orders_path
+  expect(current_path).to eq orders_path
 end
 
 When("I click on {string} button") do |element|
@@ -8,16 +8,18 @@ When("I click on {string} button") do |element|
   @stripe_iframe = all('iframe[name=stripe_checkout_app]').last
 end
 
-When("I fill I fill in stripe form field {string} with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-When("I fill I fill in stripe form field {string} {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+Given("I fill in stripe form field {string} with {string}") do |field, value|
+  sleep(2)
+  @stripe_iframe = all('iframe[name=stripe_checkout_app]').last
+  within_frame @stripe_iframe do
+      fill_in field, with: value
+  end
 end
 
 When("I submit the stripe form") do
-  pending # Write code here that turns the phrase above into concrete actions
+  within_frame @stripe_iframe do
+    find('.Section-button').click
+  end
 end
 
 Then("I should on the {string} page") do |string|
