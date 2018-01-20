@@ -23,8 +23,7 @@ Feature: Customer can pay for order
 
 
   Scenario: User can fill in stripe form
-    Given I visit the landing page
-    And I click on "Order" link
+    Given I click on "Order" link
     And I click on "Pay with Card" button
     And I fill in stripe form field "Email" with "random@random.com"
     And I fill in stripe form field "Card number" with "4242 4242 4242 4242"

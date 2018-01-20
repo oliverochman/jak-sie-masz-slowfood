@@ -20,6 +20,6 @@ end
 When("I submit the stripe form") do
   @stripe_iframe = all('iframe[name=stripe_checkout_app]').last
   within_frame @stripe_iframe do
-    find('#submitButton').click
+    find('.Section-button').click
   end
 end
