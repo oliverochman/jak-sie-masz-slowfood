@@ -21,7 +21,3 @@ When("I submit the stripe form") do
     find('.Section-button').click
   end
 end
-
-Then("I should on the {string} page") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
-end

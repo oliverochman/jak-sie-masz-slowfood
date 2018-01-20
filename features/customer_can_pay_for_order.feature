@@ -1,4 +1,4 @@
-@javascript @stripe
+@javascript @stripe @googlemap
 Feature: Customer can pay for order
   As a customer
   In order to complete my purchase
