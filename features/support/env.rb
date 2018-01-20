@@ -2,12 +2,13 @@ require 'coveralls'
 Coveralls.wear_merged!('rails')
 
 require 'cucumber/rails'
+require 'webmock/cucumber'
 
 Chromedriver.set_version '2.33'
 
 Capybara.register_driver :selenium do |app|
   options = Selenium::WebDriver::Chrome::Options.new(
-    args: %w[headless disable-popup-blocking]
+    args: %w[ disable-popup-blocking ]
   )
 
   Capybara::Selenium::Driver.new(
