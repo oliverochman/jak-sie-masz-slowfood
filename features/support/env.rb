@@ -31,4 +31,11 @@ end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+
+blacklist = ['maps.googleapis.com']
+allowed_sites = lambda{|uri|
+  blacklist.none?{|site| uri.host.include?(site) }
+}
+WebMock.disable_net_connect!(allow: allowed_sites)
+
 World FactoryBot::Syntax::Methods

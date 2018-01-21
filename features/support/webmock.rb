@@ -1,4 +1,5 @@
-WebMock.disable_net_connect!(allow_localhost: true, allow: 'chromedriver.storage.googleapis.com' )
+#WebMock.disable_net_connect!(allow_localhost: true, allow: 'chromedriver.storage.googleapis.com' )
+
 
 Before('@googlemap') do
   fixtures_path = "#{::Rails.root}/features/support/fixtures"
