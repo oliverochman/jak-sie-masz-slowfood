@@ -23,3 +23,7 @@ When("I submit the stripe form") do
     find('.Section-button').click
   end
 end
+
+Then("I should not be redirected to order page") do
+    expect(page.current_path).not_to eq orders_path
+end
