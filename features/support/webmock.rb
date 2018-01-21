@@ -1,4 +1,4 @@
-WebMock.disable_net_connect!(allow_localhost: true)
+WebMock.disable_net_connect!(allow_localhost: true, allow: 'chromedriver.storage.googleapis.com' )
 
 Before('@googlemap') do
   fixtures_path = "#{::Rails.root}/features/support/fixtures"
@@ -45,13 +45,5 @@ Before('@googlemap') do
   stub_request(:get, 'https://maps.googleapis.com/maps/api/geocode/json?address=Centralplan%2015,%20111%2020%20Stockholm,%20Sweden&key=AIzaSyDW9dLu18GJQ7iv-kyvjjZUevgHRQQtx2E&language=en&sensor=false')
       .with(headers: {'Accept' => '*/*', 'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent' => 'Ruby'})
       .to_return(status: 200, body: centralplan_alt, headers: {})
-
-  stub_request(:get, "http://chromedriver.storage.googleapis.com/").
-      with(headers: {
-          'Accept' => '*/*',
-          'Accept-Encoding' => 'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'User-Agent' => 'Ruby'
-      }).
-      to_return(status: 200, body: "", headers: {})
 
 end
