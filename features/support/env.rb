@@ -4,21 +4,36 @@ Coveralls.wear_merged!('rails')
 require 'cucumber/rails'
 require 'webmock/cucumber'
 
+# Chromedriver.set_version '2.33'
+#
+# Capybara.register_driver :selenium do |app|
+#   options = Selenium::WebDriver::Chrome::Options.new(
+#     args: %w[ headless disable-popup-blocking ]
+#   )
+#
+#   Capybara::Selenium::Driver.new(
+#     app,
+#     browser: :chrome,
+#     options: options
+#   )
+# end
+
+
+#Capybara.javascript_driver = :selenium
+#
 Chromedriver.set_version '2.33'
 
-Capybara.register_driver :selenium do |app|
-  options = Selenium::WebDriver::Chrome::Options.new(
-    args: %w[ headless disable-popup-blocking ]
+Capybara.register_driver :chrome do |app|
+  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
+      chromeOptions: {
+          args: %w[ headless no-sandbox disable-popup-blocking ]
+      }
   )
 
-  Capybara::Selenium::Driver.new(
-    app,
-    browser: :chrome,
-    options: options
-  )
+  Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: capabilities)
 end
 
-Capybara.javascript_driver = :selenium
+Capybara.javascript_driver = :chrome
 
 ActionController::Base.allow_rescue = false
 
