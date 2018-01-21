@@ -42,12 +42,41 @@ Feature: Customer can pay for order
     And I submit the stripe form
     Then I should not be redirected to order page
 
-
   Scenario: Users card has expired
     Given I click on "Order" link
     And I click on "Pay with Card" button
     And I fill in stripe form field "Email" with "random@random.com"
     And I fill in stripe form field "Card number" with "4000 0000 0000 0069"
+    And I fill in stripe form field "MM / YY" with "12/2021"
+    And I fill in stripe form field "CVC" with "123"
+    And I submit the stripe form
+    Then I should not be redirected to order page
+
+  Scenario: Users card cvc is incorrect
+    Given I click on "Order" link
+    And I click on "Pay with Card" button
+    And I fill in stripe form field "Email" with "random@random.com"
+    And I fill in stripe form field "Card number" with "4000 0000 0000 0127"
+    And I fill in stripe form field "MM / YY" with "12/2021"
+    And I fill in stripe form field "CVC" with "123"
+    And I submit the stripe form
+    Then I should not be redirected to order page
+
+  Scenario: Processing error
+    Given I click on "Order" link
+    And I click on "Pay with Card" button
+    And I fill in stripe form field "Email" with "random@random.com"
+    And I fill in stripe form field "Card number" with "4000 0000 0000 0119"
+    And I fill in stripe form field "MM / YY" with "12/2021"
+    And I fill in stripe form field "CVC" with "123"
+    And I submit the stripe form
+    Then I should not be redirected to order page
+
+  Scenario: Users card is declined
+    Given I click on "Order" link
+    And I click on "Pay with Card" button
+    And I fill in stripe form field "Email" with "random@random.com"
+    And I fill in stripe form field "Card number" with "4000 0000 0000 0002"
     And I fill in stripe form field "MM / YY" with "12/2021"
     And I fill in stripe form field "CVC" with "123"
     And I submit the stripe form
